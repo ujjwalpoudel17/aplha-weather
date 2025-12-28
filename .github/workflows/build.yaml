@@ -21,8 +21,8 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ujjwal1124/alpha-weather:${{ env.GITHUB_RUN_ID }} .
+          docker build -t ujjwal1124/alpha-weather:$GITHUB_RUN_ID .
       
       - name: Push Docker Image
         run: |
-          docker push ujjwal1124/alpha-weather:${{ env.GITHUB_RUN_ID }}
+          docker push ujjwal1124/alpha-weather:$GITHUB_RUN_ID
